@@ -13,8 +13,8 @@ This is a Next.js application that provides a user interface to browse albums, v
 1. **Clone the Repository**  
    If you have access to the repository, clone it to your local machine:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/nhn0208/refine-app.git
+   cd refine-app
    ```
 
 2. **Install Dependencies**  
@@ -26,13 +26,6 @@ This is a Next.js application that provides a user interface to browse albums, v
    ```bash
    yarn install
    ```
-
-3. **Set Up Environment Variables**  
-   Create a `.env.local` file in the root directory and add the following (adjust as needed based on your API):
-   ```
-   NEXT_PUBLIC_API_URL=https://jsonplaceholder.typicode.com
-   ```
-   Note: The current code uses JSONPlaceholder as a mock API. Replace the URL with your actual API endpoint if different.
 
 ## Running the Project
 
