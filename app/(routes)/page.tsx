@@ -1,9 +1,6 @@
-import React from 'react'
+import { redirect } from 'next/navigation';
 
-const MainPage = () => {
-  return (
-    <div>MainPage</div>
-  )
+export default function Home() {
+  // Redirect to /albums when accessing /
+  redirect('/albums');
 }
-
-export default MainPage
