@@ -37,7 +37,7 @@ const Sidebar = ({isOpen,setIsOpen} : SidebarProps) => {
             key={item.name}
             href={item.href}
             className={`flex items-center p-2 rounded-md mb-2 transition-colors ${
-              pathname === item.href
+              pathname === item.href || pathname.startsWith(item.href)
                 ? 'bg-blue-300 text-blue-800'
                 : 'text-gray-600 hover:bg-gray-200'
             }`}

@@ -138,7 +138,11 @@ const AlbumDetailPage = () => {
           />
           <div>
             <a href={`/users/${user.id}`} className="text-normal font-semibold text-blue-600 hover:text-blue-400">{user.name}</a>
-            <p className="text-blue-600 text-sm">{user.email}</p>
+            <div>
+              <a href={`mailto:${user.email}`} className="hover:text-blue-400 text-sm text-blue-600">
+                  {user.email}
+              </a>
+            </div>
           </div>
         </div>
         <h1 className="text-xl font-semibold mb-4 border-b pb-4">{album.title}</h1>

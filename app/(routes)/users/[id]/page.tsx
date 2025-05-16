@@ -88,7 +88,11 @@ const UserDetailPage = () => {
             />
             <div>
             <h2 className="text-lg font-semibold text-black">{user.name}</h2>
-            <p className="text-blue-600 text-sm">{user.email}</p>
+            <div>
+              <a href={`mailto:${user.email}`} className="hover:text-blue-400 text-sm text-blue-600">
+                {user.email}
+              </a>
+            </div>
             </div>
         </div>
         <p className="font-semibold text-black text-lg">Albums</p>

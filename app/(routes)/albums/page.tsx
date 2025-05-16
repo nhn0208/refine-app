@@ -221,14 +221,14 @@ const AlbumsPage = () => {
                 <td className="p-4 text-gray-600">{album.id}</td>
                 <td className="p-4 text-gray-600">{album.title}</td>
                 <td className="p-4">
-                  <div className="flex items-center">
+                  <a href={`/users/${album.userId}`} className="flex items-center" >
                     <img
                       src={getAvatarUrl(album.userId)}
                       alt={getUserName(album.userId)}
                       className="w-8 h-8 rounded-full mr-2"
                     />
                     <span className="text-blue-600">{getUserName(album.userId)}</span>
-                  </div>
+                  </a>
                 </td>
                 <td className="p-4">
                   <Link href={`/albums/${album.id}`} className="w-[80px] flex items-center justify-center text-gray-600 hover:text-blue-600 border hover:border-blue-600 rounded">

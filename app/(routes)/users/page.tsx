@@ -93,9 +93,21 @@ const UsersPage = () => {
                   />
                 </td>
                 <td className="p-4 text-gray-600">{user.name}</td>
-                <td className="p-4 text-blue-400">{user.email}</td>
-                <td className="p-4 text-blue-400">{user.phone}</td>
-                <td className="p-4 text-blue-400">{user.website}</td>
+                <td className="p-4 text-blue-400">
+                  <a href={`mailto:${user.email}`} className="hover:text-blue-400 text-sm text-blue-600">
+                    {user.email}
+                  </a>
+                </td>
+                <td className="p-4 text-blue-400">
+                  <a href={`tel:${user.phone}`} className="hover:text-blue-400 text-sm text-blue-600">
+                  {user.phone}
+              </a>
+                </td>
+                <td className="p-4 text-blue-400">
+                  <a href={`https://${user.website}`} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 text-sm text-blue-600">
+                    {user.website}
+                  </a>
+                </td>
                 <td className="p-4">
                   <Link href={`/users/${user.id}`} className="w-[80px] flex items-center justify-center text-gray-600 hover:text-blue-600 border hover:border-blue-600 rounded-sm">
                     <Eye className="w-5 h-5 mr-1" />
